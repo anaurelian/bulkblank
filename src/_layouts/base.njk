@@ -20,10 +20,6 @@
   {# <link rel="manifest" href="/site.webmanifest"> #}
   {# <meta name="theme-color" content="#000000"> #}
 
-  {# Web Analytics  #}
-  {% if site.isProduction %}
-    {% include "blocks/common/web-analytics.njk" %}
-  {% endif %}
 </head>
 <body class="antialiased text-gray-600 bg-gray-100">
 
@@ -50,5 +46,9 @@
     }
   </script> #}
 
+  {# Cloudflare Web Analytics #}
+  {% if site.isProduction %}
+    {% include "blocks/common/web-analytics.njk" %}
+  {% endif %}
 </body>
 </html>
