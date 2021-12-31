@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+
+  .bb-link {
+    @apply font-semibold text-indigo-600;
+  }
+
+  .bb-container {
+    @apply max-w-6xl md:px-8 mx-auto px-4 sm:px-6;
+  }
+
+  .bb-button {
+    @apply bg-gray-800 font-semibold px-8 py-4 rounded text-white text-xl;
+  }
+
+  .bb-url {
+    @apply bg-white block border border-gray-200 hover:bg-gray-600 hover:text-white mb-4 px-4 py-4 rounded-md;
+  }
+
+  .bb-url-visited {
+    @apply text-gray-400 hover:bg-white hover:text-gray-400;
+  }
+}
+
+@layer utilities {
+}
